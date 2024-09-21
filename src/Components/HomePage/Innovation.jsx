@@ -58,7 +58,7 @@ const Innovation = () => {
         >
           <Typography
             sx={{
-              fontWeight: 600,
+              fontWeight: "medium",
               color: "#010205",
               paddingLeft: "7px",
               fontSize: "35px",
@@ -67,32 +67,42 @@ const Innovation = () => {
             Meet the Minds Behind the
             <br /> Innovation
           </Typography>
-          <Button
-            onClick={() => navigate("#")}
+          <Typography
             sx={{
               display: "flex",
               alignItems: "center",
-              marginTop: "-35px",
-              gap: 5,
-              color: "#000",
-              fontSize: "14px",
-              padding: "10px 15px",
               border: "1px solid black",
               borderRadius: 10,
-              textTransform: "capitalize",
+              px: 2,
+              py: 1,
+              rowGap: 0,
+              marginRight: "10px",
+              marginTop: { sm: "10px" },
+              columnGap: { xs: 0, md: 2 },
+              display: { xs: "none", sm: "flex" },
             }}
           >
-            <Typography>See All</Typography>
+            <button
+              onClick={() => navigate("#")}
+              style={{
+                border: "none",
+                backgroundColor: "transparent",
+                paddingRight: "7px",
+              }}
+            >
+              See All
+            </button>
             <EastIcon />
-          </Button>
+          </Typography>
         </Typography>
 
         <Box
           sx={{
             display: "flex",
+            flexDirection: { xs: "column", sm: "row" },
             gap: 2,
             overflow: "hidden",
-            width: "100vw",
+            width: { md: "100vw" },
           }}
         >
           {ImagesArray.map((item) => (
@@ -149,6 +159,35 @@ const Innovation = () => {
             </Box>
           ))}
         </Box>
+        <Typography
+          sx={{
+            display: { xs: "flex", sm: "none" },
+
+            alignItems: "center",
+            width: "min-content",
+            whiteSpace: "nowrap",
+            border: "1px solid black",
+            borderRadius: 10,
+            padding: "5px 10px",
+            rowGap: 0,
+            position: "relative",
+            left: "50%",
+            transform: "translateX(-50%)",
+            columnGap: { xs: 0, md: 2 },
+          }}
+        >
+          <button
+            onClick={() => navigate("#")}
+            style={{
+              border: "none",
+              backgroundColor: "transparent",
+              paddingRight: "9px",
+            }}
+          >
+            Read our story
+          </button>
+          <EastIcon />
+        </Typography>
       </Box>
     </Container>
   );

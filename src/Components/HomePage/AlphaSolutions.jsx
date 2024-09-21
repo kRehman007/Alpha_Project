@@ -67,6 +67,7 @@ const AlphaSolutions = () => {
               sx={{
                 transform: activeBox === num ? "none" : "rotate(90deg)",
                 fontWeight: 600,
+
                 color: activeBox === num ? "#fff" : "#656363",
               }}
             >
