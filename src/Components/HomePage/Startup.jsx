@@ -12,7 +12,7 @@ const Startup = () => {
         backgroundColor: "black",
         paddingTop: "50px",
         paddingBottom: "60px",
-        borderRadius: 20,
+        borderRadius: 5,
       }}
     >
       <Box

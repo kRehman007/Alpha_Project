@@ -31,6 +31,7 @@ const AlphaSolutions = () => {
           <Box
             key={num}
             onMouseEnter={() => setActiveBox(num)}
+            onMouseLeave={() => setActiveBox(1)}
             sx={{
               backgroundColor: activeBox === num ? "black" : "lightgray",
               width: activeBox === num ? "30%" : "210px",
