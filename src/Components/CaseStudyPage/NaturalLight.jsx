@@ -1,10 +1,9 @@
 import { Container, Typography, Box } from "@mui/material";
-import img1 from "../../assets/InnovativeImg2.svg";
-import img2 from "../../assets/InnovativeImg3.svg";
+import img1 from "../../assets/CaseStudyImg2.svg";
+import img2 from "../../assets/CaseStudyImg3.svg";
 import React from "react";
 
-const Light = () => {
-  console.log("Renderd");
+const NaturalLight = () => {
   return (
     <Container sx={{ marginTop: "40px" }}>
       <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
@@ -64,4 +63,4 @@ const Light = () => {
   );
 };
 
-export default Light;
+export default NaturalLight;
