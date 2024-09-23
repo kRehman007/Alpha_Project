@@ -129,7 +129,7 @@ const Section2 = () => {
           }}
         >
           <Typography sx={{ fontWeight: "medium", fontSize: "35px" }}>
-            Trending Blog
+            Trending Blogs
           </Typography>
           <Typography
             sx={{

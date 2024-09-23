@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import About from "./Components/AboutPage/About";
 import Services from "./Components/ServicePage/Services";
 import Blog from "./Components/BlogPage/Blog";
+import Ideas from "./Components/IdeasPage/Ideas";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
-      <Route path="/blog" element={<Blog />} />
+      <Route path="/blogs" element={<Blog />} />
+      <Route path="/innovative" element={<Ideas />} />
     </Routes>
   );
 }

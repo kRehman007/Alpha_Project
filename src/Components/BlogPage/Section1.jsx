@@ -10,7 +10,9 @@ const Section1 = () => {
   return (
     <Container sx={{ marginTop: "60px", marginBottom: "40px" }}>
       <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-        <Typography sx={{ fontWeight: 600, fontSize: "35px" }}>Blog</Typography>
+        <Typography sx={{ fontWeight: 600, fontSize: "35px" }}>
+          Blogs
+        </Typography>
 
         <Typography
           sx={{ fontSize: "14px", color: "#878C91", fontWeight: 500 }}
