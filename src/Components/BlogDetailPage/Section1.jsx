@@ -1,23 +1,22 @@
+import React from "react";
 import { Box, Container, Typography } from "@mui/material";
 import img from "../../assets/CaseStudyImg1.svg";
-import React from "react";
 
-const Title = () => {
+const Section1 = () => {
   return (
-    <Container sx={{ marginTop: "60px", marginBottom: "40px" }}>
+    <Container sx={{ marginTop: "60px" }}>
       <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-        <Typography sx={{ fontSize: "35px", fontWeight: "medium" }}>
-          Case Study Title
-        </Typography>
         <Typography
-          sx={{ fontSize: "15px", fontWeight: "medium", color: "#878C91" }}
+          sx={{
+            fontSize: "35px",
+            fontWeight: { xs: "medium", sm: "bold" },
+            lineHeight: 1.2,
+          }}
         >
-          We are a passionate team of digital marketing enthusiasts dedicated to
-          helping businesses succeed in the digital world. With years of
-          experience and a deep understanding of the ever-evolving online
-          landscape, we stay at the forefront of industry trends and
-          technologies.
+          The Benefits of Meditation: How Sitting in Silence Can Improve Your
+          Mental Health
         </Typography>
+
         <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
           <Box sx={{ height: { xs: "360px", sm: "auto" } }}>
             <img
@@ -57,4 +56,4 @@ const Title = () => {
   );
 };
 
-export default Title;
+export default Section1;

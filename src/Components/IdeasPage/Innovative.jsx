@@ -4,7 +4,7 @@ import React from "react";
 
 const Innovative = () => {
   return (
-    <Container sx={{ marginTop: "60px" }}>
+    <Container sx={{ marginTop: "60px", marginBottom: "40px" }}>
       <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
         <Typography sx={{ fontSize: "35px", fontWeight: "medium" }}>
           Innovative Ideas

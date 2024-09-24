@@ -6,10 +6,13 @@ import React from "react";
 const Light = () => {
   console.log("Renderd");
   return (
-    <Container sx={{ marginTop: "40px" }}>
+    <Container sx={{ marginTop: "0px" }}>
       <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
         <Typography
-          sx={{ fontWeight: "medium", fontSize: { xs: "25px", sm: "35px" } }}
+          sx={{
+            fontWeight: { xs: "medium", md: "bold" },
+            fontSize: { xs: "25px", sm: "35px" },
+          }}
         >
           Natural light is a highly sought-after feature in any space
         </Typography>
@@ -38,12 +41,22 @@ const Light = () => {
           needed. Cross pollination across our domains we need to build it so
           that it scales.
         </Typography>
-        <Box sx={{ display: "flex", gap: { xs: 3, lg: 9 }, margin: "10px 0" }}>
+        <Box
+          sx={{
+            display: "flex",
+            gap: { xs: 3, lg: 3 },
+            textAlign: "center",
+            margin: "10px 0",
+          }}
+        >
           <img src={img1} style={{ width: "48%" }} />
           <img src={img2} style={{ width: "48%" }} />
         </Box>
         <Typography
-          sx={{ fontWeight: "medium", fontSize: { xs: "25px", sm: "35px" } }}
+          sx={{
+            fontWeight: { xs: "medium", md: "bold" },
+            fontSize: { xs: "25px", sm: "35px" },
+          }}
         >
           Natural light is a highly sought-after feature in any space
         </Typography>
