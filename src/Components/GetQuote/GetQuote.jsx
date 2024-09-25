@@ -324,10 +324,12 @@ const getQuote = () => {
             color: "#fff",
             cursor: "pointer",
             display: "flex",
-            marginTop: "10px",
+            marginTop: "20px",
+            float: "right",
             alignItems: "center",
             padding: "5px 15px",
             borderRadius: "50px",
+            marginBottom: "20px",
           }}
         >
           Send
