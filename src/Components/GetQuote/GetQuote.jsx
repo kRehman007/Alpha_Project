@@ -42,16 +42,31 @@ const ContactUs = () => {
     // Add more countries as needed
   ];
   return (
-    <Container sx={{ marginTop: "60px", marginBottom: "40px" }}>
+    <Container
+      sx={{
+        marginTop: "60px",
+        marginBottom: "40px",
+      }}
+    >
       <Typography
-        sx={{ fontWeight: "medium", fontSize: "35px", marginBottom: "50px" }}
+        sx={{ fontWeight: "medium", fontSize: "35px", marginBottom: "30px" }}
       >
         Get a Quote
       </Typography>
       <Box
-        sx={{ display: "flex", flexWrap: "wrap", columnGap: 14, rowGap: 10 }}
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          columnGap: 14,
+          rowGap: 10,
+          background: "lightgray",
+          borderRadius: "10px",
+          padding: "30px 40px",
+        }}
       >
-        <FormControl sx={{ width: { xs: "100%", sm: "40%", md: "45%" } }}>
+        <FormControl
+          sx={{ width: { xs: "100%", sm: "40%", md: "43%", lg: "44%" } }}
+        >
           <InputLabel
             htmlFor="name-input"
             sx={{
@@ -70,7 +85,9 @@ const ContactUs = () => {
             }}
           />
         </FormControl>
-        <FormControl sx={{ width: { xs: "100%", sm: "40%", md: "45%" } }}>
+        <FormControl
+          sx={{ width: { xs: "100%", sm: "40%", md: "43%", lg: "44%" } }}
+        >
           <InputLabel
             htmlFor="email-input"
             sx={{
@@ -89,7 +106,9 @@ const ContactUs = () => {
             }}
           />
         </FormControl>
-        <FormControl sx={{ width: { xs: "100%", sm: "40%", md: "45%" } }}>
+        <FormControl
+          sx={{ width: { xs: "100%", sm: "40%", md: "43%", lg: "44%" } }}
+        >
           <InputLabel
             htmlFor="telephone-input"
             sx={{
@@ -108,7 +127,9 @@ const ContactUs = () => {
             }}
           />
         </FormControl>
-        <FormControl sx={{ width: { xs: "100%", sm: "41%", md: "45%" } }}>
+        <FormControl
+          sx={{ width: { xs: "100%", sm: "41%", md: "43%", lg: "44%" } }}
+        >
           <InputLabel
             id="country-select-label"
             sx={{
@@ -132,7 +153,9 @@ const ContactUs = () => {
             ))}
           </Select>
         </FormControl>
-        <FormControl sx={{ width: { xs: "100%", sm: "40%", md: "45%" } }}>
+        <FormControl
+          sx={{ width: { xs: "100%", sm: "40%", md: "43%", lg: "44%" } }}
+        >
           <InputLabel
             htmlFor="project-input"
             sx={{
@@ -151,7 +174,9 @@ const ContactUs = () => {
             }}
           />
         </FormControl>
-        <FormControl sx={{ width: { xs: "100%", sm: "40%", md: "45%" } }}>
+        <FormControl
+          sx={{ width: { xs: "100%", sm: "40%", md: "43%", lg: "44%" } }}
+        >
           <InputLabel
             htmlFor="budget-input"
             sx={{

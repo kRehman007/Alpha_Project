@@ -162,6 +162,7 @@ const Section2 = () => {
               marginRight: { xs: "25px", sm: "0" },
               marginTop: { xs: "30px", sm: "20px" },
               order: { xs: 1, sm: 2 },
+              marginBottom: { xs: "15px", sm: "0px" },
             }}
           >
             <img src={img} style={{ width: "100%", height: "100%" }} />

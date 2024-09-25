@@ -97,8 +97,8 @@ const Mission = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "12px",
-                  fontWeight: 600,
+                  fontSize: "14px",
+                  fontWeight: "medium",
                   color: "#878C91",
                   width: { md: "35ch" },
                 }}

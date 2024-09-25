@@ -7,7 +7,13 @@ import img4 from "../../../src/assets/Innovation 4.svg";
 const Section = () => {
   return (
     <Container sx={{ marginTop: "60px" }}>
-      <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: 1,
+        }}
+      >
         <Typography sx={{ fontSize: "35px", fontWeight: "bold" }}>
           Our Incredible Team
         </Typography>
@@ -20,7 +26,12 @@ const Section = () => {
         <Box
           sx={{
             display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr 1fr",
+            gridTemplateColumns: {
+              xs: "1fr",
+              sm: "1fr  1fr",
+              md: "1fr 1fr 1fr",
+              lg: "repeat(4,1fr)",
+            },
             gap: 2,
             maxWidth: "100%",
             marginTop: "20px",
@@ -32,8 +43,6 @@ const Section = () => {
               position: "relative",
               background: `url(${img1})`,
               backgroundSize: "cover",
-
-              height: "352px",
               borderRadius: 5,
               color: "#fff",
             }}

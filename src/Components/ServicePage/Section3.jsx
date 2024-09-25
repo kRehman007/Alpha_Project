@@ -262,7 +262,7 @@ const Section3 = () => {
                       </Typography>
                       <Typography
                         sx={{
-                          width: { xs: "28ch", sm: "25ch" },
+                          width: { xs: "28ch", sm: "30ch" },
                           color: "#878C91",
                           fontSize: "12px",
                         }}

@@ -44,13 +44,13 @@ const Light = () => {
         <Box
           sx={{
             display: "flex",
-            gap: { xs: 3, lg: 3 },
+            gap: { xs: 1, sm: 2 },
             textAlign: "center",
             margin: "10px 0",
           }}
         >
-          <img src={img1} style={{ width: "48%" }} />
-          <img src={img2} style={{ width: "48%" }} />
+          <img src={img1} style={{ width: "49%" }} />
+          <img src={img2} style={{ width: "49%" }} />
         </Box>
         <Typography
           sx={{

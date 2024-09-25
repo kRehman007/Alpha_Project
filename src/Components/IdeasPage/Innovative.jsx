@@ -6,7 +6,9 @@ const Innovative = () => {
   return (
     <Container sx={{ marginTop: "60px", marginBottom: "40px" }}>
       <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-        <Typography sx={{ fontSize: "35px", fontWeight: "medium" }}>
+        <Typography
+          sx={{ fontSize: "35px", fontWeight: { xs: "medium", md: "bold" } }}
+        >
           Innovative Ideas
         </Typography>
         <Typography

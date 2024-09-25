@@ -3,7 +3,7 @@ import img from "../../assets/TickImg.svg";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const SuccessMsg = () => {
+const SuccessMsg = ({ heading, btn1, btn2, text, link }) => {
   const navigate = useNavigate();
   return (
     <Container>
@@ -16,7 +16,7 @@ const SuccessMsg = () => {
           height: "100vh",
         }}
       >
-        <img src={img} style={{ width: "150px" }} />
+        <img src={img} style={{ width: { xs: "100px", sm: "150px" } }} />
         <Typography
           sx={{
             fontSize: "25px",
@@ -25,7 +25,7 @@ const SuccessMsg = () => {
             fontWeight: 600,
           }}
         >
-          Request Sent
+          {heading}
         </Typography>
         <Typography
           sx={{
@@ -36,19 +36,18 @@ const SuccessMsg = () => {
             textAlign: "center",
           }}
         >
-          Your request to get a quote has been sent successfully, You will get a
-          response soon, Thanks,
+          {text}
         </Typography>
         <Box
           sx={{
             display: "flex",
-            gap: 2,
+            gap: { xs: 1, sm: 2 },
             marginTop: "20px",
             alignItems: "center",
           }}
         >
           <Button
-            onClick={() => navigate("/contact")}
+            onClick={() => navigate(`/${link}`)}
             sx={{
               background: "#000",
               textTransform: "capitalize",
@@ -56,10 +55,12 @@ const SuccessMsg = () => {
               fontWeight: "medium",
               borderRadius: "50px",
               color: "#fff",
-              px: 3,
+              px: { xs: 2, sm: 3 },
+
+              border: "1px solid black",
             }}
           >
-            Request Another
+            {btn1}
           </Button>
           <Button
             onClick={() => navigate("/")}
@@ -70,10 +71,10 @@ const SuccessMsg = () => {
               fontWeight: 600,
               borderRadius: "50px",
               color: "#000",
-              px: 3,
+              px: { xs: 2, sm: 3 },
             }}
           >
-            Go to Home
+            {btn2}
           </Button>
         </Box>
       </Box>
