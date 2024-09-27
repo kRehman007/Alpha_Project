@@ -39,6 +39,7 @@ const AlphaSolutions = () => {
             onMouseEnter={() => setActiveBox(num)}
             onMouseLeave={() => setActiveBox(1)}
             sx={{
+              overflow: "hidden",
               backgroundColor: activeBox === num ? "black" : "lightgray",
               width: activeBox === num ? "30%" : "210px",
               borderRadius: 5,
