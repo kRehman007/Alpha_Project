@@ -9,36 +9,41 @@ const Startup = () => {
     <Container
       sx={{
         marginTop: "60px",
-        backgroundColor: "black",
-        paddingTop: "50px",
-        paddingBottom: "60px",
-        borderRadius: 5,
       }}
     >
       <Box
         sx={{
+          backgroundColor: "black",
+
+          padding: "50px 20px",
+          borderRadius: 5,
           display: "flex",
           flexDirection: "column",
           gap: 2,
-          justifyContent: "center",
-          alignItems: "center",
+          justifyContent: { sm: "center" },
+          alignItems: { sm: "center" },
         }}
       >
-        <Typography sx={{ color: "#fff", fontWeight: 600, fontSize: "35px" }}>
+        <Typography
+          sx={{
+            color: "#fff",
+            fontWeight: { xs: "medium", md: 600 },
+            fontSize: "35px",
+          }}
+        >
           Transform Your Startup Journey
         </Typography>
         <Typography
           sx={{
             color: "#fff",
             fontWeight: 500,
-            fontSize: "14px",
-            textAlign: "center",
+            fontSize: { xs: "12px", sm: "14px" },
+            textAlign: { sm: "center" },
+            width: { sm: "65ch", md: "70ch" },
           }}
         >
           From Ideation to MVP Development, AlphaEdge Solutions empowers your
-          innovation journey with key
-          <br />
-          features for success
+          innovation journey with key features for success
         </Typography>
         <Typography sx={{ display: "flex", gap: 3, marginTop: "10px" }}>
           {[1, 2, 3].map((num) => (
@@ -49,7 +54,7 @@ const Startup = () => {
                 px: 3,
                 py: 1,
                 color: "#fff",
-                fontSize: "10px",
+                fontSize: { xs: "7px", md: "10px" },
               }}
               key={num}
             >
@@ -62,7 +67,20 @@ const Startup = () => {
           ))}
         </Typography>
 
-        <Typography sx={{ display: "flex", gap: 3, color: "#fff" }}>
+        <Typography
+          sx={{
+            display: "flex",
+            flexDirection: {
+              xs: "column",
+              sm: "row",
+            },
+            flexWrap: "wrap",
+            justifyContent: { xs: "center", lg: "flex-start" },
+            alignItems: { xs: "center", lg: "flex-start" },
+            gap: { sm: 2 },
+            color: "#fff",
+          }}
+        >
           {[1, 2, 3].map((num) => (
             <Typography
               sx={{
@@ -76,7 +94,7 @@ const Startup = () => {
                     : `url(${img3})`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
-                width: "321.86px",
+                width: { xs: "300.86px", lg: "321.86px" },
                 height: "321.86px",
                 color: "#fff",
                 borderRadius: 5,

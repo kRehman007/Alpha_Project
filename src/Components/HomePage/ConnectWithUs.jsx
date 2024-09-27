@@ -11,25 +11,29 @@ const ConnectWithUs = () => {
           flexDirection: "column",
           gap: 1,
           backgroundColor: "black",
-          padding: "40px",
+          padding: { xs: "40px 20px", sm: "40px" },
           color: "#fff",
           borderRadius: 5,
         }}
       >
-        <Typography sx={{ fontSize: "35px" }}>
+        <Typography sx={{ fontSize: { xs: "23px", sm: "35px" } }}>
           Ready to work with us ?
         </Typography>
         <Typography
           sx={{
             display: "flex",
+            flexDirection: { xs: "column", md: "row" },
             justifyContent: "space-between",
             alignItems: "start",
+            gap: { xs: 5, md: 0 },
           }}
         >
-          <Typography sx={{ fontSize: "14px" }}>
+          <Typography
+            sx={{ fontSize: "14px", width: { md: "80ch", lg: "100ch" } }}
+          >
             Get started today and join over hundreds of satisfied clients. Enter
-            your email to join our community and
-            <br /> stay updated with the latest trends and insights.
+            your email to join our community and stay updated with the latest
+            trends and insights.
           </Typography>
           <Button
             onClick={() => navigate("#")}

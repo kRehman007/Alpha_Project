@@ -51,7 +51,7 @@ const getQuote = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    navigate("/querySuccess");
+    navigate("/SuccessMsg");
   };
 
   return (

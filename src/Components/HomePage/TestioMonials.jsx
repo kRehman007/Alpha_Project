@@ -40,11 +40,21 @@ const TestioMonials = () => {
                 key={item.id}
                 sx={{ display: "flex", flexDirection: "column", gap: 4 }}
               >
-                <Typography sx={{ fontWeight: 600, fontSize: "20px" }}>
+                <Typography
+                  sx={{
+                    fontWeight: { xs: "medium", sm: 600 },
+                    fontSize: "20px",
+                  }}
+                >
                   {item.text}
                 </Typography>
                 <Typography
-                  sx={{ display: "flex", justifyContent: "space-between" }}
+                  sx={{
+                    display: "flex",
+                    flexDirection: { xs: "column", sm: "row" },
+                    justifyContent: "space-between",
+                    gap: { xs: 2, sm: 0 },
+                  }}
                 >
                   <Typography
                     sx={{ display: "flex", gap: 2, alignItems: "center" }}
@@ -75,7 +85,13 @@ const TestioMonials = () => {
                     </Typography>
                   </Typography>
                   <Typography
-                    sx={{ display: "flex", gap: 2, alignItems: "center" }}
+                    sx={{
+                      display: "flex",
+                      gap: 2,
+                      alignItems: "center",
+                      paddingLeft: { xs: "10px", sm: "0" },
+                      paddingTop: { xs: "10px", sm: "0" },
+                    }}
                   >
                     <Typography
                       onClick={() => SwiperRef.current?.slidePrev()}
@@ -86,6 +102,7 @@ const TestioMonials = () => {
                         padding: "5px 15px",
                         display: "flex",
                         justifyContent: "center",
+
                         alignItems: "center",
                         backgroundColor: item.id == Array.length && "black",
                         color: item.id == Array.length ? "#fff" : "#000",
